@@ -5,4 +5,15 @@ edition = "2021"
 
 [dependencies]
 actix-web = "4.9.0"
-serde = { version = "1.0.215", features = ["derive"] }
+config = "0.14.1"
+deadpool-postgres = { version = "0.14.0", features = ["serde"] }
+derive_more = { version = "1.0.0", features = ["display", "error", "from"] }
+dotenvy = "0.15.7"
+env_logger = "0.11.5"
+log = "0.4.22"
+openssl = "0.10.68"
+polars = { version = "0.44.2", features = ["lazy"] }
+postgres-openssl = "0.5.0"
+serde = { version = "1.0.215", features = ["serde_derive"] }
+tokio = "1.42.0"
+tokio-postgres = "0.7.12"
